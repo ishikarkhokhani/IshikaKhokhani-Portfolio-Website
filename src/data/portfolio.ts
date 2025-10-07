@@ -11,6 +11,7 @@ export interface Experience {
   description: string[];
   tags: string[];
   type: 'work' | 'project' | 'research';
+  profiles: ('data-analyst' | 'software-engineer' | 'ml-ai')[];
 }
 
 export interface Course {
@@ -80,7 +81,8 @@ export const experiences: Experience[] = [
       'Deployed RESTful APIs to sync inventory data with internal dashboards, improving update speed by 30% and reducing delays in operations reporting.'
     ],
     tags: ['Python', 'SQL', 'scikit-learn', 'Firebase', 'PostgreSQL', 'REST APIs'],
-    type: 'work'
+    type: 'work',
+    profiles: ['data-analyst', 'software-engineer', 'ml-ai']
   },
   {
     id: 'exp-nirvana',
@@ -94,7 +96,8 @@ export const experiences: Experience[] = [
       'Implemented data logging features (scans, timestamps, stock status) to support analytics and identify bottlenecks in supply flow.'
     ],
     tags: ['Python', 'JavaScript', 'HTML', 'Data Analytics'],
-    type: 'work'
+    type: 'work',
+    profiles: ['software-engineer', 'data-analyst']
   }
 ];
 
@@ -111,7 +114,8 @@ export const projects: Experience[] = [
       'Collaborating in a 5-member graduate team, applying software engineering, data engineering, and AI/ML techniques to deliver a working prototype aligned with real-world constraints.'
     ],
     tags: ['Python', 'AI/ML', 'Data Engineering', 'Research', 'Security'],
-    type: 'research'
+    type: 'research',
+    profiles: ['ml-ai', 'data-analyst', 'software-engineer']
   },
   {
     id: 'proj-intent',
@@ -126,7 +130,8 @@ export const projects: Experience[] = [
       'Performed error and intent overlap analysis using confusion matrices and exploratory techniques, reducing misclassification in similar queries by 10%.'
     ],
     tags: ['Python', 'NLP', 'BERT', 'TensorFlow', 'scikit-learn', 'Machine Learning'],
-    type: 'project'
+    type: 'project',
+    profiles: ['ml-ai', 'data-analyst']
   },
   {
     id: 'proj-buyme',
@@ -141,7 +146,8 @@ export const projects: Experience[] = [
       'Led feature planning and testing sprints in a 4-member Agile team, validating features across devices with Git and emulator testing.'
     ],
     tags: ['Flutter', 'Dart', 'Firebase', 'Mobile Development', 'UI/UX'],
-    type: 'project'
+    type: 'project',
+    profiles: ['software-engineer']
   }
 ];
 
