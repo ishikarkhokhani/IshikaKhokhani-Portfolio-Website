@@ -311,13 +311,13 @@ Visitor information (name, email, LinkedIn) is stored in your database.
 ### Colors and Theme
 **File:** `src/index.css`
 
-The design uses a Netflix-inspired dark theme. You can customize colors by changing the CSS variables:
+The design uses a dark theme. You can customize colors by changing the CSS variables:
 
 ```css
 :root {
   --background: 0 0% 8%;        /* Main background color */
   --foreground: 0 0% 95%;       /* Text color */
-  --primary: 0 100% 45%;        /* Netflix red - primary color */
+  --primary: 0 100% 45%;        /* Bright Red - primary color */
   --primary-glow: 0 100% 55%;   /* Lighter red for hover */
   /* ... more colors */
 }

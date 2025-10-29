@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
+import { Github, Link, Linkedin, Mail, Menu, X } from 'lucide-react';
+import { SiMedium } from 'react-icons/si';
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,9 +24,8 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -34,8 +34,7 @@ export const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold text-gradient hover:scale-105 transition-transform"
           >
-            IK
-          </button>
+            IK</button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -56,7 +55,7 @@ export const Navigation = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/ishikarkhokhani"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -73,6 +72,16 @@ export const Navigation = () => {
             >
               <Linkedin className="w-5 h-5" />
             </a>
+            {/* NEW: Dedicated Medium Link */}
+            <a
+                href="https://medium.com/@ishikarkhokhani"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                aria-label="Medium"
+              >
+                <SiMedium size={23} />
+              </a>
             <a
               href="mailto:ishikarkhokhani@gmail.com"
               className="social-icon"

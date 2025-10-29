@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Netflix-inspired dark theme */
+    /* -inspired dark theme */
     --background: 0 0% 8%;
     --foreground: 0 0% 95%;
 
@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 95%;
 
-    /* Netflix red as primary */
+    /* Bright red as primary */
     --primary: 0 100% 45%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 0 100% 55%;

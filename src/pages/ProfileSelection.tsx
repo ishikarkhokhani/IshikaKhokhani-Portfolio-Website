@@ -12,13 +12,13 @@ const profiles = [
     description: 'Analytics, visualization, and data-driven insights',
     color: 'from-blue-500 to-cyan-500',
   },
-  {
-    id: 'software-engineer' as ProfileType,
-    name: 'Software Engineer',
-    icon: Code,
-    description: 'Full-stack development and system design',
-    color: 'from-purple-500 to-pink-500',
-  },
+  // {
+  //   id: 'software-engineer' as ProfileType,
+  //   name: 'Software Engineer',
+  //   icon: Code,
+  //   description: 'Full-stack development and system design',
+  //   color: 'from-purple-500 to-pink-500',
+  // },
   {
     id: 'ml-ai' as ProfileType,
     name: 'ML/AI Engineer',
@@ -47,7 +47,7 @@ export default function ProfileSelection() {
     
     // Navigate to main portfolio with a small delay for animation
     setTimeout(() => {
-      navigate('/portfolio');
+      navigate('/Index');
     }, 300);
   };
 
@@ -60,21 +60,21 @@ export default function ProfileSelection() {
       <div className="relative z-10 w-full max-w-6xl px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Choose Your View
+            Pick a Profile!
           </h1>
           <p className="text-xl text-muted-foreground">
             Select a profile to see relevant experience and projects
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-scale-in">
+        <div className="flex flex-wrap justify-center gap-6 animate-scale-in max-w-4xl mx-auto">
           {profiles.map((profile) => {
             const Icon = profile.icon;
             return (
               <button
                 key={profile.id}
                 onClick={() => handleProfileSelect(profile.id)}
-                className={`group relative bg-card rounded-lg p-8 card-glow hover:scale-105 transition-all duration-300 ${
+                className={`group relative bg-card rounded-lg p-8 card-glow hover:scale-105 transition-all duration-300 w-full sm:w-3/4 md:w-2/5 ${
                   selectedProfile === profile.id ? 'ring-2 ring-primary' : ''
                 }`}
               >

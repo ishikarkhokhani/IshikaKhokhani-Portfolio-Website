@@ -199,7 +199,7 @@ export const courses: Course[] = [
     id: 'course-netsec',
     name: 'Network Security',
     institution: 'Virginia Tech',
-    blogLink: 'https://medium.com/@yourusername/network-security-insights',
+    blogLink: 'https://medium.com/@ishikarkhokhani/tls-1-3-lessons-on-speed-and-security-through-0-rtt-replay-attacks-5d2971d2e559',
     status: 'published'
   }
 ];
