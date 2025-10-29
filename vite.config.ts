@@ -4,8 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // ADD THIS LINE FOR GITHUB PAGES DEPLOYMENT
-  base: '/IshikaKhokhani-s-Portfolio-Website/', 
+  base: '/IshikaKhokhani-Portfolio-Website/', 
   // ------------------------------------------
   server: {
     host: "::",
