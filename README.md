@@ -6,7 +6,7 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone [https://github.com/ishikarkhokhani/IshikaKhokhani-s-Portfolio-Website.git]
+git clone [https://github.com/ishikarkhokhani/IshikaKhokhani-Portfolio-Website.git]
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
